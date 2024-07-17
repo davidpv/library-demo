@@ -32,3 +32,7 @@ print(f"Book 1 returned: {returned}")
 overdue = library_service.get_overdue_rentals()
 print(f"Overdue rentals: {overdue}")
 
+# Get rentals by user
+user_rentals = library_service.get_rentals_by_user(user1.user_id)
+print(f"Rentals by user {user1.user_id}: {user_rentals}")
+
