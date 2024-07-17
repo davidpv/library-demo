@@ -1,4 +1,4 @@
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Union
 from domain.book import Book, BookId
 from domain.user import User, UserId
 from domain.rental_record import RentalRecord
@@ -47,4 +47,7 @@ class RentalRepository:
         return self.rentals.get(book_id)
 
     def get_all(self) -> List[RentalRecord]:
+
+    def get_by_user_id(self, user_id: UserId) -> List[RentalRecord]:
+        return [rental for rental in self.rentals.values() if rental.user.user_id == user_id]
         return list(self.rentals.values())
