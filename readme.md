@@ -9,6 +9,7 @@ This is a simple Python application that demonstrates the functionality of a lib
 - Rent books to users for a specified period (default: 14 days)
 - Return rented books
 - Get a list of overdue rentals
+- Get rentals by user
 
 ## Project Structure
 
