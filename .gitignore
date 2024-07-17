@@ -3,5 +3,4 @@ __pycache__
 .aider*
 
 .env
-
-application/.DS_Store
+.DS_Store
