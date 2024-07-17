@@ -47,6 +47,10 @@ class RentalRepository:
         return self.rentals.get(book_id)
 
     def get_all(self) -> List[RentalRecord]:
+        return list(self.rentals.values())
+
+    def get_by_user_id(self, user_id: UserId) -> List[RentalRecord]:
+        return [rental for rental in self.rentals.values() if rental.user.user_id == user_id]
 
     def get_by_user_id(self, user_id: UserId) -> List[RentalRecord]:
         return [rental for rental in self.rentals.values() if rental.user.user_id == user_id]
