@@ -52,3 +52,8 @@ class RentalService:
     def get_overdue_rentals(self) -> List[RentalRecord]:
         now = datetime.now()
         return [rental for rental in self.rental_repo.get_all() if rental.due_date < now]
+    def get_rentals_by_user(self, user_id: UserId) -> List[RentalRecord]:
+        user = self.user_repo.get_by_id(user_id)
+        if not user:
+            return []
+        return [rental for rental in self.rental_repo.get_all() if rental.user.user_id == user_id]
