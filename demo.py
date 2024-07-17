@@ -34,5 +34,5 @@ print(f"Overdue rentals: {overdue}")
 
 # Get rentals by user
 user_rentals = library_service.get_rentals_by_user(user1.user_id)
-print(f"Rentals by user {user1.user_id}: {user_rentals}")
+print(f"Rentals by user {user1.user_name.value}: {user_rentals}")
 
