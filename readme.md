@@ -27,5 +27,7 @@ This is a simple Python application that demonstrates the functionality of a lib
 3. Navigate to the project directory.
 4. Run the `demo.py` script:
 
-```bash
-python demo.py
+```
+Author: [Your Name]
+```
+
