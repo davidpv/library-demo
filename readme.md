@@ -28,6 +28,6 @@ This is a simple Python application that demonstrates the functionality of a lib
 4. Run the `demo.py` script:
 
 ```
-Author: [Your Name]
+Author: David Pérez
 ```
 
